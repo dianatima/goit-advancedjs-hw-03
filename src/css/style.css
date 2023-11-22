@@ -38,6 +38,7 @@ img {
     margin-left: auto;
     margin-right: auto;
   }
+  
   .loader::after {
     content: '';  
     box-sizing: border-box;
