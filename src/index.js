@@ -21,6 +21,7 @@ fetchBreeds()
   .then(res => {
     const data = [...res].map(item => ({ value: item.id, text: item.name }));
     refs.loader.classList.add('hidden');
+    refs.select.classList.remove('hidden');
     const slimSelect = new SlimSelect({
       select: document.querySelector('#selectElement'),
       data: data,
